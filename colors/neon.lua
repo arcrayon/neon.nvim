@@ -248,11 +248,8 @@ SetHl("@string.special.symbol.make", mods["none"], colors["royal"], colors["none
 SetHl("@operator.make", mods["none"], colors["royal_l"], colors["none"])
 
 --============================= SETUP - SYNTAX - SH/BASH
-SetHl("@punctuation.bracket.bash", mods["none"], colors["salmon_l"], colors["none"])
-SetHl("@punctuation.delimiter.bash", mods["none"], colors["salmon_d"], colors["none"])
-SetHl("@variable.parameter.bash", mods["none"], colors["turquoise_d"], colors["none"])
-SetHl("@punctuation.special.bash", mods["none"], colors["royal_l"], colors["none"])
-SetHl("@character.special.bash", mods["none"], colors["purple_l"], colors["none"])
+SetHl("shLoop", mods["none"], colors["salmon_l"], colors["none"])
+SetHl("shConditional", mods["none"], colors["salmon_l"], colors["none"])
 
 --============================= SETUP - SYNTAX - HTML
 SetHl("@constant.html", mods["none"], colors["royal_l"], colors["none"])

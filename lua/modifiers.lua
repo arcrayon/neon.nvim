@@ -3,14 +3,14 @@ local mods = {
     bold = {"bold", "bold"},
     italic = {"italic", "italic"},
     underline = {"underline", "underline"},
-    underdbl = {"underdouble", "underdouble"},
-    underdot = {"underdoted", "underdoted"},
-    underdash = {"underdashed", "underdashed"},
+    underdouble = {"underdouble", "underdouble"},
+    underdoted = {"underdoted", "underdoted"},
+    underdashed = {"underdashed", "underdashed"},
     undercurl = {"undercurl", "undercurl"},
     reverse = {"reverse", "reverse"},
     standout = {"standout", "standout"},
     altfont = {"altfont", "altfont"},
-    strike = {"strikethrough", "strikethrough"},
+    strikethrough = {"strikethrough", "strikethrough"},
     none = {"NONE", "NONE"}
 }
 return mods

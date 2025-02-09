@@ -16,7 +16,8 @@ SetHl("TabLineSel", mods["none"], colors["none"], colors["black_l"])
 SetHl("WinSeparator", mods["none"], colors["gray"], colors["none"])
 SetHl("Pmenu", mods["none"], colors["none"], colors["black_l"])
 SetHl("PmenuSel", mods["bold"], colors["none"], colors["black_l"])
-SetHl("PmenuThumb", mods["none"], colors["none"], colors["black_ll"])
+SetHl("PmenuThumb", mods["none"], colors["none"], colors["gray_dd"])
+SetHl("FloatBorder", mods["none"], colors["gray"], colors["none"])
 
 -- VIM - GENERAL TEXT
 ---------------------
@@ -96,7 +97,7 @@ SetHl("@function.builtin", mods["none"], colors["turquoise_l"], colors["none"])
 SetHl("@variable.parameter.bash", mods["none"], colors["turquoise_d"], colors["none"])
 SetHl("@punctuation.special.bash", mods["none"], colors["royal_d"], colors["none"])
 SetHl("@character.special.bash", mods["none"], colors["purple_l"], colors["none"])
-SetHl("@variable.special.bash", mods["none"], colors["purple_l"], colors["none"])
+SetHl("@variable.builtin.bash", mods["none"], colors["purple_l"], colors["none"])
 
 -- ADDON - LAZY
 ---------------
@@ -107,9 +108,35 @@ SetHl("LazyButton", mods["none"], colors["white"], colors["none"])
 SetHl("LazyButtonActive", mods["none"], colors["turquoise_l"], colors["none"])
 SetHl("LazySpecial", mods["bold"], colors["turquoise_l"], colors["none"])
 
+-- ADDON - LSPCMP
+-----------------
+SetHl("CmpItemKind", mods["italic"], colors["gray_l"], colors["none"])
+SetHl("CmpItemKindKeyword", mods["italic"], colors["salmon_l"], colors["none"])
+SetHl("CmpItemKindClass", mods["italic"], colors["salmon_l"], colors["none"])
+SetHl("CmpItemKindStruct", mods["italic"], colors["salmon_l"], colors["none"])
+SetHl("CmpItemKindEnum", mods["italic"], colors["salmon_l"], colors["none"])
+SetHl("CmpItemKindInterface", mods["italic"], colors["salmon_l"], colors["none"])
+SetHl("CmpItemKindField", mods["italic"], colors["salmon_l"], colors["none"])
+SetHl("CmpItemKindUnit", mods["italic"], colors["salmon_l"], colors["none"])
+SetHl("CmpItemKindFile", mods["italic"], colors["turquoise_l"], colors["none"])
+SetHl("CmpItemKindFunction", mods["italic"], colors["turquoise_l"], colors["none"])
+SetHl("CmpItemKindMethod", mods["italic"], colors["turquoise_l"], colors["none"])
+SetHl("CmpItemKindModule", mods["italic"], colors["turquoise_l"], colors["none"])
+SetHl("CmpItemKindConstructor", mods["italic"], colors["turquoise_l"], colors["none"])
+SetHl("CmpItemKindOperator", mods["italic"], colors["turquoise_l"], colors["none"])
+SetHl("CmpItemKindFolder", mods["italic"], colors["royal_l"], colors["none"])
+SetHl("CmpItemKindConstant", mods["italic"], colors["royal_l"], colors["none"])
+SetHl("CmpItemKindVariable", mods["italic"], colors["royal_l"], colors["none"])
+SetHl("CmpItemKindReference", mods["italic"], colors["royal_l"], colors["none"])
+SetHl("CmpItemKindParameter", mods["italic"], colors["royal_l"], colors["none"])
+SetHl("CmpItemKindEnumMember", mods["italic"], colors["royal_l"], colors["none"])
+SetHl("CmpItemKindSnippet", mods["italic"], colors["purple_l"], colors["none"])
+
 -- ADDON - TELESCOPE
 --------------------
 SetHl("TelescopeTitle", mods["bold"], colors["salmon_l"], colors["none"])
+SetHl("TelescopeBorder", mods["none"], colors["gray"], colors["none"])
+SetHl("TelescopePromptPrefix", mods["none"], colors["purple_l"], colors["none"])
 
 -- ADDON - NERDTREE
 -------------------

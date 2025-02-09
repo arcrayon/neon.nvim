@@ -93,8 +93,12 @@ SetHl("@character.special.bash", mods["none"], colors["purple_l"], colors["none"
 SetHl("LazyH1", mods["bold"], colors["purple_l"], colors["none"])
 SetHl("LazyH2", mods["bold"], colors["turquoise_l"], colors["none"])
 SetHl("LazyComment", mods["none"], colors["turquoise_d"], colors["none"])
-SetHl("LazyButton", mods["none"], colors["turquoise_l"], colors["none"])
+SetHl("LazyButton", mods["none"], colors["white"], colors["none"])
+SetHl("LazyButtonActive", mods["none"], colors["turquoise_l"], colors["none"])
 SetHl("LazySpecial", mods["bold"], colors["turquoise_l"], colors["none"])
+
+-- ADDON - TELESCOPE
+SetHl("TelescopeTitle", mods["bold"], colors["salmon_l"], colors["none"])
 
 -- ADDON - NERDTREE
 SetHl("NerdtreeExecFile", mods["bold"], colors["turquoise_l"], colors["none"])

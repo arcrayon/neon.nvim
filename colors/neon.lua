@@ -91,13 +91,14 @@ SetHl("Removed", mods["none"], colors["red_l"], colors["none"])
 SetHl("@variable", mods["none"], colors["royal_l"], colors["none"])
 SetHl("@constant", mods["none"], colors["royal_l"], colors["none"])
 SetHl("@function.builtin", mods["none"], colors["turquoise_l"], colors["none"])
+SetHl("@variable.builtin", mods["none"], colors["purple_l"], colors["none"])
+SetHl("@constant.builtin", mods["none"], colors["purple_l"], colors["none"])
 
 -- CODE - TREESITTER BASH
 -------------------------
 SetHl("@variable.parameter.bash", mods["none"], colors["turquoise_d"], colors["none"])
 SetHl("@punctuation.special.bash", mods["none"], colors["royal_d"], colors["none"])
 SetHl("@character.special.bash", mods["none"], colors["purple_l"], colors["none"])
-SetHl("@variable.builtin.bash", mods["none"], colors["purple_l"], colors["none"])
 
 -- ADDON - LAZY
 ---------------

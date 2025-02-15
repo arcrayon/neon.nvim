@@ -27,8 +27,10 @@ rm -rf $DST && mkdir -p $DST
 
 cd $DST/..
 git clone "https://github.com/Skalyaev/$DIRNAME.git" colors
+cd colors
 
-cd colors && mv colors/* lua/* . && rm -rf colors lua
+mv colors/* lua/* .
+rm -rf colors lua
 echo -e "\nvim.cmd([[colorscheme $COLORSHCHEME]])" >> $NVIMCONFIG
 ```
 
@@ -37,5 +39,7 @@ echo -e "\nvim.cmd([[colorscheme $COLORSHCHEME]])" >> $NVIMCONFIG
 ```sh
 cd $HOME/.config/nvim/colors
 git pull
-mv colors/* lua/* . && rm -rf colors lua
+
+mv colors/* lua/* .
+rm -rf colors lua
 ```

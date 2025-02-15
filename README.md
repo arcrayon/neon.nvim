@@ -1,4 +1,4 @@
-![](https://github.com/Skalyaev/a-nvim-theme/blob/main/preview.png)
+![](preview.png)
 
 ### Install - Lazy Plugin Manager
 

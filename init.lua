@@ -12,7 +12,7 @@ vim.cmd([[hi normal guibg=NONE ctermbg=NONE]])
 ------------------
 SetHl("StatusLine", mods["bold"], colors["none"], colors["black_l"])
 SetHl("StatusLineNC", mods["none"], colors["none"], colors["black_l"])
-SetHl("TabLineSel", mods["none"], colors["none"], colors["black_ll"])
+SetHl("TabLineSel", mods["bold"], colors["none"], colors["black_l"])
 SetHl("WinSeparator", mods["none"], colors["gray"], colors["none"])
 SetHl("Pmenu", mods["none"], colors["none"], colors["black_l"])
 SetHl("PmenuSel", mods["bold"], colors["none"], colors["black_l"])

@@ -31,3 +31,11 @@ git clone "https://github.com/Skalyaev/$DIRNAME.git" colors
 cd colors && mv colors/* lua/* . && rm -rf colors lua
 echo -e "\nvim.cmd([[colorscheme $COLORSHCHEME]])" >> $NVIMCONFIG
 ```
+
+### Update - Manual
+
+```sh
+cd $HOME/.config/nvim/colors
+git pull
+mv colors/* lua/* . && rm -rf colors lua
+```

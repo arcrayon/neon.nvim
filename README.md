@@ -1,6 +1,6 @@
 ![](https://github.com/Skalyaev/a-nvim-theme/blob/main/preview.png)
 
-### Install - Lazy
+### Install - Lazy Plugin Manager
 
 ```lua
 {
@@ -12,4 +12,22 @@
         vim.cmd([[colorscheme neon]])
     end
 }
+```
+
+### Install - Manual
+
+```sh
+NVIMCONFIG=$HOME/.config/nvim/init.lua
+
+DIRNAME=a-nvim-theme
+COLORSHCHEME=neon
+
+DST=$HOME/.config/nvim/colors
+rm -rf $DST && mkdir -p $DST
+
+cd $DST/..
+git clone "https://github.com/Skalyaev/$DIRNAME.git" colors
+
+cd colors && mv colors/* lua/* . && rm -rf colors lua
+echo -e "\nvim.cmd([[colorscheme $COLORSHCHEME]])" >> $NVIMCONFIG
 ```

@@ -19,7 +19,15 @@
 cd ~/.config/nvim && rm -rf colors
 git clone https://github.com/Skalyaev/a-nvim-theme.git colors
 
-cd colors && mv colors/* lua/* . && rm -rf colors lua
+cd colors
+cat lua/asset/* > neon.lua
+cat lua/* >> neon.lua
+cat colors/* >> neon.lua
+rm -rf lua colors
+
+sed -i "/require/d" neon.lua
+sed -i "/return/d" neon.lua
+
 echo -e "\nvim.cmd([[colorscheme neon]])" >> ../init.lua
 ```
 

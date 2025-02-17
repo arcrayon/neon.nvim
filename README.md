@@ -16,13 +16,10 @@
 ### Install - Manual
 
 ```sh
-cd ~/.config/nvim && rm -r colors
+cd ~/.config/nvim && rm -rf colors
 git clone https://github.com/Skalyaev/a-nvim-theme.git colors
 
-cd colors
-mv init.lua neon.lua
-mv lua/* . && rm -rf lua
-
+cd colors && mv colors/* lua/* . && rm -rf colors lua
 echo -e "\nvim.cmd([[colorscheme neon]])" >> ../init.lua
 ```
 
@@ -30,7 +27,5 @@ echo -e "\nvim.cmd([[colorscheme neon]])" >> ../init.lua
 
 ```sh
 cd ~/.config/nvim/colors && git pull
-
-mv init.lua neon.lua
-mv lua/* . && rm -rf lua
+mv colors/* lua/* . && rm -rf colors lua
 ```

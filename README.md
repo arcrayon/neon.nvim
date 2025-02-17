@@ -16,29 +16,21 @@
 ### Install - Manual
 
 ```sh
-NVIMCONFIG=$HOME/.config/nvim/init.lua
+cd ~/.config/nvim && rm -r colors
+git clone https://github.com/Skalyaev/a-nvim-theme.git colors
 
-DIRNAME=a-nvim-theme
-COLORSHCHEME=neon
-
-DST=$HOME/.config/nvim/colors
-rm -rf $DST && mkdir -p $DST
-
-cd $DST/..
-git clone "https://github.com/Skalyaev/$DIRNAME.git" colors
 cd colors
+mv init.lua neon.lua
+mv lua/* . && rm -rf lua
 
-mv colors/* lua/* .
-rm -rf colors lua
-echo -e "\nvim.cmd([[colorscheme $COLORSHCHEME]])" >> $NVIMCONFIG
+echo -e "\nvim.cmd([[colorscheme neon]])" >> ../init.lua
 ```
 
 ### Update - Manual
 
 ```sh
-cd $HOME/.config/nvim/colors
-git pull
+cd ~/.config/nvim/colors && git pull
 
-mv colors/* lua/* .
-rm -rf colors lua
+mv init.lua neon.lua
+mv lua/* . && rm -rf lua
 ```
